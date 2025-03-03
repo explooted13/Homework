@@ -1,17 +1,32 @@
 package org.example;
-import java.time.LocalDate;
 
 import java.sql.Array;
+public class Main{
+public static void main(String[] args) {
+    bowl bowl = new bowl();
+    bowl.addEat(100);
+    cat cat1 = new cat("Vasya",7,"run");
+    cat cat2 = new cat("Ugolyek",1150,"eat");
+    dog dog1 = new dog("Sharik",150,"run");
+    dog dog2 = new dog("Sharik",50,"swim");
+    System.out.println("Кошек создано: "+cat.getCount());
+    System.out.println("Собак создано: "+dog.getCount());
 
-public class Main {
-    public static void main(String[] args) {
-        product product = new product("Телефон", "28.02.2025", "Samsung", "Южная Корея", 59999.99, false);
-        product.printInfo();
-        product[] productsArray = new product[5];
-        productsArray[0] = new product("Телевизор", "28.02.2025","Samsung", "Южная корея",59999.99,false);
-        productsArray[1] = new product("Машина", "28.02.2025","Samsung", "Южная корея",519999.99,false);
-        productsArray[2] = new product("Велосипед", "28.02.2025","Samsung", "Южная корея",29999.99,false);
-        productsArray[3] = new product("Дверь", "28.02.2025","Samsung", "Южная корея",539999.99,false);
-        productsArray[4] = new product("Чайник", "28.02.2025","Samsung", "Южная корея",1319999.99,false);
+
+    math circle = new Circle(5, "Красный", "Черный");
+    math rectangle = new Rectangle(4, 7, "Синий", "Зеленый");
+    math triangle = new Triangle(3, 4, 5, "Желтый", "Фиолетовый");
+
+    printMathInfoInfo(circle);
+    printMathInfoInfo(rectangle);
+    printMathInfoInfo(triangle);
+}
+    private static void printMathInfoInfo(math shape) {
+        System.out.println("Фигура: " + shape.getClass().getSimpleName());
+        System.out.println("Периметр: " + shape.getPerimeter());
+        System.out.println("Площадь: " + shape.getArea());
+        System.out.println("Цвет заливки: " + shape.getFillColor());
+        System.out.println("Цвет границы: " + shape.getBorderColor());
+        System.out.println("------------------------");
     }
 }
