@@ -33,4 +33,4 @@ class Triangle implements math {
     public String getBorderColor() {
         return borderColor;
     }
-}
+}//

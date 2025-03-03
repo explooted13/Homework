@@ -8,4 +8,4 @@ public class bowl {
     public void addEat(int amount){
         this.fullness += amount;
     }
-}
+}//

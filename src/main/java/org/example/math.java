@@ -9,3 +9,4 @@ public interface math {
         return 0; //
     }
 }
+//
