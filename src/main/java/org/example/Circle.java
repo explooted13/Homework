@@ -30,4 +30,4 @@ class Circle implements math {
     public String getBorderColor() {
         return borderColor;
     }
-}//
+}

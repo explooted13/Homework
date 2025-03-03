@@ -32,4 +32,4 @@ class Rectangle implements math {
     public String getBorderColor() {
         return borderColor;
     }
-}//
+}

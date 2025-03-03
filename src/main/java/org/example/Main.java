@@ -29,4 +29,4 @@ public static void main(String[] args) {
         System.out.println("Цвет границы: " + shape.getBorderColor());
         System.out.println("------------------------");
     }
-}//
+}

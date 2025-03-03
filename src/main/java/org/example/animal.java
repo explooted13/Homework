@@ -10,4 +10,4 @@ public class animal {
     public void swim(int distance){
         System.out.println("Я проплыл "+distance+" метров");
     }
-}//
+}
