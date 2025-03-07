@@ -1,6 +1,6 @@
 package org.example;
 
-public class product {
+public class Product {
     private String name;
     private String date;
     private String manufacturer;
@@ -9,7 +9,7 @@ public class product {
     private boolean isReserved;
 
     // Название, дата, производитель, страна происхождения, цена, состояние бронирования прокупателем
-    public product(String name, String date, String manufacturer,
+    public Product(String name, String date, String manufacturer,
                    String countryOfOrigin, double price, boolean isReserved) {
         this.name = name;
         this.date = date;
